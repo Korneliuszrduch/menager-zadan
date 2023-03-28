@@ -67,7 +67,7 @@ html {
     flex-wrap: wrap;
     align-items: center;
 
-
+    border-bottom: 1px solid #9c9393;
 
 
 }
@@ -93,12 +93,13 @@ html {
 
 
 
+
+
 }
 
 .container__span--ListUnderline {
     display: flex;
     padding: 10px;
 
-    border-top: 1px solid red;
     background-color: white;
 }
