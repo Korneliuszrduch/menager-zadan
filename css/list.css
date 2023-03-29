@@ -1,0 +1,37 @@
+.list {
+    background-color: white;
+    margin-top: 3px;
+    margin-left: 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    border-bottom: 2px solid #9c9393;
+
+}
+
+.list__item--ikonCheck {
+
+    flex-direction: column;
+}
+
+
+.list__item--text {
+    display: flex;
+    text-decoration: underline;
+    flex-grow: 1;
+}
+
+.list__item--deleteIcon {
+    display: flex;
+    font-size: 30px;
+}
+
+.list__item--underline {
+    display: flex;
+    padding: 10px;
+
+    background-color: white;
+}
