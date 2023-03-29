@@ -10,24 +10,28 @@ html {
 
 .body {
 
-    background-color: rgb(242, 239, 236);
+    background-color: rgba(199, 190, 190, 0.563);
     display: flex;
 
     min-height: 100vh;
     justify-content: center;
 
+}
+.container__header{
 
-
-
-
+    margin-left: 15px;
+    margin-bottom: 3px;
 }
 
 .container {
-    background-color: rgba(239, 242, 236, 0.541);
+    background-color: white;
     display: flex;
     flex-basis: 600px;
+
+    height: auto;
     flex-direction: column;
-    justify-content: flex-start;
+
+
 
 
 
@@ -43,7 +47,7 @@ html {
     margin-left: 0px;
     background-color: white;
     display: flex;
-
+    border-bottom: 1px solid rgba(199, 190, 190, 0.563);
 }
 
 .container__span--textListTask {
@@ -53,7 +57,7 @@ html {
 
     padding: 15px;
     display: flex;
-   
+    border-bottom: 1px solid rgba(199, 190, 190, 0.563);
 
 }
 
