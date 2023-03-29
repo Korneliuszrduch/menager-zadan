@@ -13,11 +13,12 @@ html {
     background-color: rgba(199, 190, 190, 0.563);
     display: flex;
 
-    min-height: 100vh;
+    min-height: 50vh;
     justify-content: center;
 
 }
-.container__header{
+
+.container__header {
 
     margin-left: 15px;
     margin-bottom: 3px;
@@ -28,7 +29,7 @@ html {
     display: flex;
     flex-basis: 600px;
 
-    height: auto;
+
     flex-direction: column;
 
 
@@ -38,7 +39,7 @@ html {
 
 }
 
-.container__span--addTask {
+.container__section {
 
     padding: 15px;
     margin: 0px;
@@ -50,7 +51,7 @@ html {
     border-bottom: 1px solid rgba(199, 190, 190, 0.563);
 }
 
-.container__span--textListTask {
+.container__span {
     background-color: white;
     margin-top: 5px;
     margin-left: 0px;
@@ -60,6 +61,3 @@ html {
     border-bottom: 1px solid rgba(199, 190, 190, 0.563);
 
 }
-
-
-
