@@ -13,7 +13,7 @@ html {
     background-color: rgba(199, 190, 190, 0.563);
     display: flex;
 
-    min-height: 50vh;
+
     justify-content: center;
 
 }
@@ -21,7 +21,7 @@ html {
 .container__header {
 
     margin-left: 15px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .container {
@@ -48,7 +48,7 @@ html {
     margin-left: 0px;
     background-color: white;
     display: flex;
-    border-bottom: 1px solid rgba(199, 190, 190, 0.563);
+    border-bottom: 2px solid rgba(199, 190, 190, 0.563);
 }
 
 .container__span {
@@ -58,6 +58,6 @@ html {
 
     padding: 15px;
     display: flex;
-    border-bottom: 1px solid rgba(199, 190, 190, 0.563);
+    border-bottom: 2px solid rgba(199, 190, 190, 0.563);
 
 }
