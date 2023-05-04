@@ -36,7 +36,14 @@
     display: flex;
     word-break: break-word;
     flex-grow: 1;
+    flex-basis: 50%;
+  
  
 }
 
+
+
+.list__task--done {
+  text-decoration: line-through;
+}
    

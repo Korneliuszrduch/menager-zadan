@@ -17,11 +17,14 @@
             htmlString += `
             <li class="list__item">
            
-            <button class="list__button js-done">
-             ✔
+            <button class="list__button js-done">${task.done ? "✔":""}
+             
             </button>
          
-            <span class="list__task">     ${task.contend}  </span>
+
+           
+
+            <span class="list__task ${task.done ? "list__task--done": ""}">     ${task.contend}  </span>
                  
               
                     
@@ -36,6 +39,7 @@
 
 
         document.querySelector(".js-list").innerHTML = htmlString;
+        toggleDoneButtons();
 
 
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -54,6 +58,22 @@
         });
         render();
     };
+
+
+    const toggleTaskDone = (taskIndex) => {
+        tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
+      };
+
+      const toggleDoneButtons = () => {
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        toggleDoneButtons.forEach((toggleDoneButton, index) => {
+          toggleDoneButton.addEventListener("click", () => {
+            toggleTaskDone(index);
+          });
+        });
+    };
+
 
     const init = () => {
         render();
