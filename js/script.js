@@ -13,14 +13,30 @@
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
+
             htmlString += `
-                <li ${task.done ? " style=\"text-decoration: line-through\"" : ""} >
-                    <button class="js-remove"> usuń</button>
-                    ${task.contend}
-                </li>
+            <li class="list__item">
+           
+            <button class="list__button js-done">
+             ✔
+            </button>
+         
+            <span class="list__task">     ${task.contend}  </span>
+                 
+              
+                    
+                    <button class="list__button--remove js-remove">
+                    🗑
+                    </button>
+                    </li>
             `;
         }
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+
+
+
+
+        document.querySelector(".js-list").innerHTML = htmlString;
+
 
         const removeButtons = document.querySelectorAll(".js-remove");
         console.log(removeButtons);

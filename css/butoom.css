@@ -1,0 +1,19 @@
+.list__button {
+
+    display: flex;
+background-color: green;
+    
+
+}
+
+.list__button--remove
+{
+    display: flex;
+
+  
+background-color: red;
+border-color: red;
+text-decoration-color: black;
+
+
+}
