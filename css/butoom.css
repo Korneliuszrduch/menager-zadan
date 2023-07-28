@@ -6,9 +6,13 @@
     padding: 2px;
     border: none;
     margin: 10px;
+    align-content: center;
     align-self: center;
     border: none;
-    text-align: center;
+  
+
+    display: grid;
+    
 }
 
 .list__button--remove {
@@ -17,4 +21,17 @@
     color: white;
     height: 30px;
     width: 30px;
+    margin: 10px;
+    display: grid;
+    align-content: center;
+    -ms-grid-column-align: start;
+}
+.section__button {
+
+    background-color: transparent;
+    border: none;
+    color:teal;
+    
+  
+  
 }
