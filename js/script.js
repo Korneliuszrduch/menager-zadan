@@ -19,7 +19,7 @@
         },
     ];
 
-   
+
 
 
     const render = () => {
@@ -32,11 +32,22 @@
          
             <button class="list__button">✓</button>
             <p class="paragraf"> ${task.content}</p>
-            <button class="list__button list__button--remove">🗑</button>
+            <button class="list__button list__button--remove js-remove">🗑</button>
         `;
 
         }
         document.querySelector(".js-list").innerHTML = htmlString;
+
+        const removeButtons = document.querySelectorAll(".js-remove");
+        console.log(removeButtons);
+        removeButtons.forEach((removeButton, index) => {
+
+            removeButton.addEventListener("click", () => {
+
+                removeTask(index);
+            });
+        });
+
 
     };
 
@@ -51,12 +62,17 @@
         addNewTask(newTaskContent);
 
     };
-    
+
     const addNewTask = (newTaskContent) => {
 
         tasks.push({ content: newTaskContent, });
 
         render();
+    };
+
+    const removeTask = (index) =>{
+        tasks.splice(index, 1);
+                render();
     };
 
 
